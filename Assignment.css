@@ -1,0 +1,122 @@
+*{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+header h1{
+    margin-top: 30px;
+    text-align: center;
+    color: #10bea1;
+    font-size: 45px;
+}
+
+#container{
+    width: 100vw;
+}
+
+#money-container{
+    display: flex;
+}
+
+h2{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.balance{
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+.money-information{
+    margin-top: 10px;
+    padding: 30px;
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+
+button{
+    padding: 13px 40px;
+    background-color: #10bea1;
+    border: 0px;  
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#save-button{
+    padding: 10px 40px;
+    margin-left: 10px;
+}
+
+#total-income, #food-input, #rent-input, #clothes-input, #saving-input{
+    padding: 10px;
+    background-color: rgb(229, 230, 235);
+    border: 0px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+#saving-input{
+    width: 100px;
+}
+
+.alighn{
+    margin-left: 23px;
+}
+.alighn2{
+    margin-left: 20px;
+}
+
+.total-alighn{
+    margin-left: 5px;
+}
+
+.remaining-alighn{
+    padding-top: 5px;
+}
+
+.expenses-alighn, .income-alighn{
+    text-align: center;
+}
+
+.money-container{
+    background-color: rgb(241, 242, 243);
+    width: 550px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-left: 60px;
+}
+
+.money-calculation{
+    padding: 20px 0 0 20px;
+}
+
+.picture{
+    padding-left: 35px; 
+    
+}
+
+img{
+    width: 650px;
+    height: 660px;
+}
+
+p{
+    display: inline;
+    font-weight: 600;
+};
+
+
+/* resposive for mobile device  */
+

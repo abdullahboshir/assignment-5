@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link rel="stylesheet" href="Assignment.css">
+
+
+    <!-- start breakpoint for mobile devices  -->
+    <style>
+        @media only screen and (max-width: 480px) {
+.money-information{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .picture{
+    width: 100%;
+    padding-left: 0px; 
+    padding-top: 20px;
+    
+}
+    img{
+    width: 100%;
+    height: 100%;
+}
+
+.money-information{
+    padding: 0;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+.money-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+    padding-top: 80px;
+    margin-left: 0px;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.money-calculation{
+    padding: 0;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.income, .expenses{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.calculation-btn, .save-money, .saving-amount{
+    width: 70%;
+}
+.income-alighn, .expenses-alighn{
+    font-size: 30px;
+    padding-top: 30px;
+}
+.remaining-alighn, .saving-alighn{
+    font-size: 20px;
+}
+.save-money{
+    width: 77%;
+}
+.input{
+    width: 100%;
+}
+  };
+    </style>
+<!-- end breakpoint for mobile devices  -->
+
+</head>
+
+
+<body>
+    <div id="constainer">
+
+<!-- start header  -->
+  <header>
+      <h1>Money Bank</h1>
+  </header>
+<!-- end header  -->
+
+
+<!-- start money information section  -->
+  <main>
+      <section id="money-container">
+          <div class="money-information">
+              
+              <!-- money hero picture  -->
+          <div class="picture">
+              <img src="moneycalculation.jpg" alt="">
+          </div>
+
+            <!-- start money calculation  -->
+          <div class="money-container">
+           <div class="money-calculation">
+
+            <!-- start income saction  -->
+            <div class="income">
+                <h2 class="income-alighn">Income</h2>
+                <p class="total-alighn">Income:</p>
+                <input type="text" id="total-income" class="input"  placeholder="Total Income">
+              </div>
+               <!-- end income saction  -->
+
+               <!-- start expenses saction  -->
+              <div class="expenses">
+                <h2 class="expenses-alighn">Expenses</h2>
+
+                 <div class="input">
+                    <p class="alighn2">Food:</p>
+                    <input type="text" id="food-input" class="input"  placeholder="cost of food">
+                 </div>
+
+                 <div class="input">
+                    <p class="alighn">Rent:</p>
+                    <input type="text" id="rent-input" class="input" placeholder="cost of Rent">
+                 </div>
+                
+                <div class="input">
+                    <p>Clothes:</p>
+                    <input type="text" id="clothes-input" class="input" placeholder="cost of Clothes">
+                </div>
+              </div>
+              <div class="calculation-btn">
+                  <button id="calculation-btn">Calculation</button>
+                  <h2>Total Expenses: <span id="total-expenses">0000</span></h2>
+                  <h2 class="balance">Balance: <span id="total-balance">0000</span></h2>
+              </div>
+              <!-- end expenses saction  -->
+
+              <!-- start saving money saction  -->
+              <div class="save-money">
+                  <input type="text" id="saving-input" class="input" placeholder="Save Money">
+                  % <button id="save-button">Save</button>
+              </div>
+
+              <div class="saving-amount">
+                  <h2 class="saving-alighn">Saving Amount: <span id="saving-amount">0000</span></h2>
+                  <h2 class="remaining-alighn">Remaining Balance: <span id="remaining-balance">0000</span></h2>
+              </div>
+                <!-- end saving money saction  -->
+
+           </div>
+          </div>
+        </div>
+      </section>
+  </main>
+</div>
+
+
+<!-- js  -->
+    <script src="Assignment.js"></script>
+</body>
+</html>
